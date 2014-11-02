@@ -1,0 +1,17 @@
+.basiccard-0-0-1 {
+	background-color: #81daf6 !important;
+	color: #FFF !important;
+}
+
+.basiccard-0-0-1 .footer {
+	border-top: 1px solid #81daf6 !important;
+}
+
+.basiccard-0-0-1 .footer span {
+	color: #FFF !important;
+}
+
+.basiccard-0-0-1 .footer #card-settings-button,
+.basiccard-0-0-1 .footer #card-resize-button {
+	border: none !important;
+}

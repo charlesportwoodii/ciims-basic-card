@@ -1,0 +1,23 @@
+{
+    "name": "BasicCard",
+    "version": "0.0.1",
+    "footerText": "basic-card",
+    "properties": {
+        "setting1": {
+            "name": "Awesome Setting #1",
+            "type": "text",
+            "value": null
+        },
+        "setting2": {
+            "name": "Awesome Setting #2",
+            "type": "email",
+            "value": null
+        }
+    },
+    "availableTileSizes": [
+        "square",
+        "rectangle",
+        "rectangleTall",
+        "squareBig"
+    ]
+}
