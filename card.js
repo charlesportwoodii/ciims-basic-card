@@ -9,6 +9,10 @@
 		console.log("render");
 	}
 
+	BasicCard.prototype.reload = function() {
+		console.log("reload function called");
+	}
+
 	function BasicCard() {
 		console.log("Initialize BasicCard");
 	};
