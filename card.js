@@ -1,25 +1,14 @@
 ;(function() {
-	var BasicCard;
-
-	BasicCard.prototype.init = function() {
-		console.log("init");
-	}
-
-	BasicCard.prototype.render = function() {
-		console.log("render");
-	}
-
-	BasicCard.prototype.reload = function() {
-		console.log("reload function called");
-	}
-
-	function BasicCard() {
-		console.log("Initialize BasicCard");
-	};
-
-	// Export the object to the global namespace
-	if (typeof module !== "undefined" && module !== null)
-    	module.exports = BasicCard;
-  	else
-    	window.BasicCard = BasicCard;
+	var BasicCard = new CardPrototype({
+		name: "BasicCard",
+		init: function() {
+			console.log("MyInitOverride");
+		},
+		reload: function() {
+			console.log("MyReloadOverride");
+		},
+		render: function() {
+			console.log("MyRenderOverride");
+		}
+	});
 }(this));

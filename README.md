@@ -80,25 +80,18 @@ The ```card.js``` file contains any JavaScript you want to include for your card
 
 ```
 ;(function() {
-	var CardName;
-
-	CardName.prototype.init = function() {
-		console.log("init");
-	}
-
-	CardName.prototype.render = function() {
-		console.log("render");
-	}
-
-	function CardName() {
-		console.log("Initialize BasicCard");
-	};
-
-	// Export the object to the global namespace
-	if (typeof module !== "undefined" && module !== null)
-    	module.exports = CardName;
-  	else
-    	window.BasicCard = CardName;
+	var CardName = new CardPrototype({
+		name: "CardName",
+		init: function() {
+			console.log("MyInitOverride");
+		},
+		reload: function() {
+			console.log("MyReloadOverride");
+		},
+		render: function() {
+			console.log("MyRenderOverride");
+		}
+	});
 }(this));
 ```
 
@@ -107,3 +100,5 @@ Currently, cards support the following prototype callbacks that should be declar
 The ```init``` method is called when the card is created, but before it is rendered
 
 The ```render``` method is called after the card has rendered to the screen
+
+The ```reload``` method is called once a property is changed, allowing you to determine if an action needs to be taken to reload the state of the card
