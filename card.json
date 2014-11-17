@@ -1,5 +1,7 @@
 {
     "name": "BasicCard",
+    "description": "This is a basic card that illustrates the capabilities of dashboard cards.",
+    "image": "card.png",
     "version": "0.0.1",
     "footerText": "basic-card",
     "properties": {
